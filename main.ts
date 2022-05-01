@@ -79,11 +79,11 @@ let correct_abc = ""
 for (let abcindex = 0; abcindex <= 9; abcindex++) {
     if (country_list[random_country].includes(abc_guess.charAt(abcindex))) {
         correct_guess_count += 1
-        correct_abc = 0
+        correct_abc = "" + correct_abc + abc_guess.charAt(abcindex)
     }
 }
 game.showLongText(correct_abc, DialogLayout.Top)
-let guessed_country = game.askForString("type in 10 letters (no numbers)", 14)
+let guessed_country = game.askForString("try to guess the country", 14)
 if (guessed_country == country_list[random_country]) {
     game.splash("you guessed the country!")
     game.over(true)
