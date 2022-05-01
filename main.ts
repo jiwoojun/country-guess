@@ -38,7 +38,11 @@ for (let abcindex = 0; abcindex <= 9; abcindex++) {
 }
 game.showLongText(correct_abc, DialogLayout.Top)
 let guessed_country = game.askForString("type in 10 letters (no numbers)", 10)
-if (true) {
-	
+if (guessed_country == country_list[random_country]) {
+    game.splash("you guessed the country!")
+    game.over(true)
+} else {
+    game.splash("you did not guess the country.")
+    game.showLongText(country_list[random_country], DialogLayout.Bottom)
+    game.over(false)
 }
-game.showLongText(country_list[random_country], DialogLayout.Bottom)
