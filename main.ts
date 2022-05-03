@@ -85,7 +85,7 @@ for (let abcindex = 0; abcindex <= 9; abcindex++) {
         incorrect_abc = "" + incorrect_abc + abc_guess.charAt(abcindex)
     }
 }
-game.showLongText("Correct:" + correct_abc + "       " + "Incorrect:" + incorrect_abc, DialogLayout.Top)
+game.showLongText("Correct:" + correct_abc + "           " + "Incorrect:" + incorrect_abc, DialogLayout.Top)
 let guessed_country = game.askForString("try to guess the country", 14)
 if (guessed_country == country_list[random_country]) {
     game.splash("you guessed the country!")
