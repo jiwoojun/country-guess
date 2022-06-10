@@ -1,5 +1,5 @@
 {
-    "name": "country guess - Copy",
+    "name": "country guess",
     "description": "",
     "dependencies": {
         "device": "*",
