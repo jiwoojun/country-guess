@@ -1,3 +1,6 @@
+let incorrect_abc = ""
+let correct_abc = ""
+let correct_guess_count = 0
 let country_list = [
 "australia",
 "brazil",
@@ -74,9 +77,6 @@ story.printText("guess the country", 80, 100)
 let abc_guess = game.askForString("type in 10 letters (no numbers)", 10)
 story.printText(abc_guess, 80, 35)
 let random_country = randint(0, 69)
-let correct_guess_count = 0
-let correct_abc = ""
-let incorrect_abc = ""
 for (let abcindex = 0; abcindex <= 9; abcindex++) {
     if (country_list[random_country].includes(abc_guess.charAt(abcindex))) {
         correct_guess_count += 1
